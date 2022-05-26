@@ -3,7 +3,8 @@ const port = 80,
 	httpStatus = require("http-status-codes"),
 	fs = require("fs");
 const routeMap = {
-	"/": "views/index.html"
+	"/": "views/index.html",
+	"/login": "views/loginPage.html"
 };
 http.createServer((req, res) => {
 	res.writeHead(httpStatus.OK, {
